@@ -1,0 +1,1020 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical AI Ecosystems - AI Development Services</title>
+    <meta name="description" content="Transform Your Business with Intelligent Technology - Custom AI Solutions">
+    <meta name="author" content="Ethical Intelligent Technologies">
+
+    <meta property="og:title" content="Ethical AI Ecosystems - AI Development Services">
+    <meta property="og:description" content="Transform Your Business with Intelligent Technology - Custom AI Solutions">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lovable_dev">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #ffffff;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 4rem;
+        }
+
+        .logo img {
+            height: 3rem;
+            width: auto;
+        }
+
+        .nav {
+            display: none;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .nav {
+                display: flex;
+            }
+        }
+
+        .nav a {
+            color: #374151;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #2563eb;
+        }
+
+        .mobile-menu {
+            display: block;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (min-width: 768px) {
+            .mobile-menu {
+                display: none;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #dbeafe 0%, #ffffff 50%, #dbeafe 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 5rem;
+            left: 2.5rem;
+            width: 18rem;
+            height: 18rem;
+            background: #bfdbfe;
+            border-radius: 50%;
+            filter: blur(3rem);
+            opacity: 0.3;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 10rem;
+            right: 2.5rem;
+            width: 18rem;
+            height: 18rem;
+            background: #93c5fd;
+            border-radius: 50%;
+            filter: blur(3rem);
+            opacity: 0.3;
+            animation: pulse 3s ease-in-out infinite 1s;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 10;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .hero-content {
+            text-align: left;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #dbeafe;
+            border: 1px solid #bfdbfe;
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-badge span {
+            color: #1d4ed8;
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-title {
+                font-size: 4.5rem;
+            }
+        }
+
+        .hero-title .highlight {
+            color: #2563eb;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            color: #6b7280;
+            line-height: 1.7;
+            max-width: 32rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 640px) {
+            .hero-buttons {
+                flex-direction: row;
+            }
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #2563eb;
+            border: 2px solid #bfdbfe;
+        }
+
+        .btn-outline:hover {
+            background: #dbeafe;
+            border-color: #93c5fd;
+        }
+
+        .trust-indicators {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding-top: 1rem;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .trust-item span {
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-image {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .floating-card {
+            position: absolute;
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            border: 1px solid #dbeafe;
+        }
+
+        .floating-card-top {
+            top: -1.5rem;
+            left: -1.5rem;
+        }
+
+        .floating-card-bottom {
+            bottom: -1.5rem;
+            right: -1.5rem;
+        }
+
+        .floating-card-content {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .floating-card-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            background: #dbeafe;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-card-text h4 {
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .floating-card-text p {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        /* Services Section */
+        .services {
+            position: relative;
+            background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+            padding: 8rem 0;
+            overflow: hidden;
+        }
+
+        .services::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 25%;
+            width: 24rem;
+            height: 24rem;
+            background: #dbeafe;
+            border-radius: 50%;
+            filter: blur(4rem);
+            opacity: 0.2;
+        }
+
+        .services::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 25%;
+            width: 24rem;
+            height: 24rem;
+            background: #e0e7ff;
+            border-radius: 50%;
+            filter: blur(4rem);
+            opacity: 0.2;
+        }
+
+        .services-container {
+            position: relative;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+
+        .services-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 768px) {
+            .services-title {
+                font-size: 3.75rem;
+            }
+        }
+
+        .services-title .gradient-text {
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .services-description {
+            font-size: 1.25rem;
+            color: #6b7280;
+            max-width: 64rem;
+            margin: 0 auto 3rem;
+            line-height: 1.7;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .service-card {
+            position: relative;
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s;
+            overflow: hidden;
+            border: 1px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-0.75rem);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(135deg, #ffffff 0%, rgba(219, 234, 254, 0.3) 100%);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(79, 70, 229, 0.2), rgba(139, 92, 246, 0.2));
+            border-radius: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-card-content {
+            position: relative;
+            z-index: 10;
+            background: white;
+            border-radius: 1.5rem;
+            margin: 1px;
+        }
+
+        .service-header {
+            padding: 2rem 2rem 1rem;
+        }
+
+        .service-icon-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-icon {
+            display: inline-flex;
+            padding: 1rem;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1f2937;
+            flex: 1;
+            transition: color 0.3s;
+        }
+
+        .service-card:hover .service-title {
+            color: #2563eb;
+        }
+
+        .service-subtitle {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #2563eb;
+            margin-bottom: 1rem;
+            padding: 0 2rem;
+        }
+
+        .service-description {
+            color: #6b7280;
+            line-height: 1.7;
+            padding: 0 2rem 2rem;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: white;
+            padding: 6rem 0;
+        }
+
+        .cta-container {
+            max-width: 64rem;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .cta-title {
+                font-size: 3rem;
+            }
+        }
+
+        .cta-description {
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-bottom: 3rem;
+            line-height: 1.7;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (min-width: 640px) {
+            .cta-buttons {
+                flex-direction: row;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background: #111827;
+            color: white;
+            padding: 4rem 0;
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #9ca3af;
+            font-size: 1.125rem;
+        }
+
+        /* Icons (simplified) */
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            color: white;
+        }
+
+        .icon-sm {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: #10b981;
+        }
+
+        .icon-blue {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: #2563eb;
+        }
+
+        /* Responsive utilities */
+        @media (max-width: 640px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .services-title {
+                font-size: 2.5rem;
+            }
+            
+            .cta-title {
+                font-size: 2rem;
+            }
+            
+            .floating-card {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./header.png" alt="EIT - Transforming Businesses Through IT">
+                </div>
+                
+                <nav class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Careers</a>
+                    <a href="#">White Label</a>
+                </nav>
+                
+                <button class="mobile-menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <span>AI Development Excellence</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="highlight">Our AI Services</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        From Classical ML to Generative AI—Custom-Built for Your Business. 
+                        We engineer intelligent ecosystems that solve real-world challenges.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">
+                            Get Started Today
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 0.5rem;">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="btn btn-outline">View Portfolio</a>
+                    </div>
+                    
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <svg class="icon-sm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Enterprise Security</span>
+                        </div>
+                        <div class="trust-item">
+                            <svg class="icon-sm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Custom Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <img src="./hero.png" alt="AI Development Services" class="hero-image">
+                    
+                    <div class="floating-card floating-card-top">
+                        <div class="floating-card-content">
+                            <div class="floating-card-icon">
+                                <svg class="icon-blue" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/>
+                                    <path d="M19 10v2a7 7 0 01-14 0v-2"/>
+                                </svg>
+                            </div>
+                            <div class="floating-card-text">
+                                <h4>Generative AI</h4>
+                                <p>Custom Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-card floating-card-bottom">
+                        <div class="floating-card-content">
+                            <div class="floating-card-icon">
+                                <svg class="icon-blue" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                </svg>
+                            </div>
+                            <div class="floating-card-text">
+                                <h4>Machine Learning</h4>
+                                <p>Enterprise Ready</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-container">
+            <div class="services-header">
+                <div class="services-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <span>Comprehensive AI Solutions</span>
+                </div>
+                
+                <h2 class="services-title">
+                    Transform Your Business with<br>
+                    <span class="gradient-text">Intelligent Technology</span>
+                </h2>
+                
+                <p class="services-description">
+                    Discover our comprehensive suite of AI services designed to revolutionize your operations, 
+                    enhance decision-making, and drive unprecedented growth across every aspect of your business.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1: Generative AI -->
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <div class="service-header">
+                            <div class="service-icon-container">
+                                <div class="service-icon">
+                                    <svg class="icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/>
+                                        <path d="M19 10v2a7 7 0 01-14 0v-2"/>
+                                    </svg>
+                                </div>
+                                <h3 class="service-title">Generative AI</h3>
+                            </div>
+                        </div>
+                        <div class="service-subtitle">Beyond Models—We Build Solutions</div>
+                        <div class="service-description">
+                            End-to-end Generative AI solutions tailored to your enterprise. From custom LLMs to multimodal AI systems, we integrate advanced generative models that solve your business problems at scale—securely and ethically.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Classical ML -->
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <div class="service-header">
+                            <div class="service-icon-container">
+                                <div class="service-icon">
+                                    <svg class="icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="service-title">Classical Machine Learning</h3>
+                            </div>
+                        </div>
+                        <div class="service-subtitle">Precision and Performance Without the Hype</div>
+                        <div class="service-description">
+                            Robust ML solutions—from predictive analytics and computer vision to reinforcement learning—designed to be interpretable, scalable, and aligned with your KPIs.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Vertical LLMs -->
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <div class="service-header">
+                            <div class="service-icon-container">
+                                <div class="service-icon">
+                                    <svg class="icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                        <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
+                                        <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/>
+                                    </svg>
+                                </div>
+                                <h3 class="service-title">Vertical LLMs</h3>
+                            </div>
+                        </div>
+                        <div class="service-subtitle">Your Domain. Your Data. Your Advantage.</div>
+                        <div class="service-description">
+                            Domain-specific large language models trained and fine-tuned using your proprietary data. Whether healthcare, finance, logistics, or law—we build custom vertical LLMs optimized for relevance, context, and compliance.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: AI for Data Insights -->
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <div class="service-header">
+                            <div class="service-icon-container">
+                                <div class="service-icon">
+                                    <svg class="icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"/>
+                                        <path d="M21 21l-4.35-4.35"/>
+                                    </svg>
+                                </div>
+                                <h3 class="service-title">AI for Data Insights & Search</h3>
+                            </div>
+                        </div>
+                        <div class="service-subtitle">From Raw Data to Real Decisions</div>
+                        <div class="service-description">
+                            Transform your data into actionable intelligence. Smart data pipelines, real-time dashboards, and conversational search interfaces powered by NLP and ML—helping teams make faster, data-driven decisions.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5: AI Agents -->
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <div class="service-header">
+                            <div class="service-icon-container">
+                                <div class="service-icon">
+                                    <svg class="icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                        <path d="M22 21v-2a4 4 0 00-3-3.87"/>
+                                        <path d="M16 3.13a4 4 0 010 7.75"/>
+                                    </svg>
+                                </div>
+                                <h3 class="service-title">AI Agents</h3>
+                            </div>
+                        </div>
+                        <div class="service-subtitle">Intelligent Agents That Think, Learn, and Act</div>
+                        <div class="service-description">
+                            AI agents capable of decision-making, collaboration, and self-improvement. From customer service to logistics optimization, our agents operate autonomously—executing complex workflows in alignment with your business goals.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6: Office Automation -->
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <div class="service-header">
+                            <div class="service-icon-container">
+                                <div class="service-icon">
+                                    <svg class="icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                                        <polyline points="14,2 14,8 20,8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                        <polyline points="10,9 9,9 8,9"/>
+                                    </svg>
+                                </div>
+                                <h3 class="service-title">AI in Office Automation</h3>
+                            </div>
+                        </div>
+                        <div class="service-subtitle">Redefining Workplace Productivity</div>
+                        <div class="service-description">
+                            Supercharge your workplace with AI-driven office automation. Streamline repetitive tasks across departments using intelligent document processing, AI-powered assistants, automated scheduling, and smart workflow routing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-container">
+            <h2 class="cta-title">💡 Ready to Build Smarter?</h2>
+            <p class="cta-description">
+                Partner with Ethical Intelligent Technologies to bring your AI initiatives to life—securely, efficiently, and at enterprise scale.
+            </p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">
+                    📞 Let's talk AI: Contact Us
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 0.75rem;">
+                        <path d="M5 12h14m-7-7l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#" class="btn btn-outline">Schedule a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2024 Ethical Intelligent Technologies. Building AI solutions that matter.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const nav = document.querySelector('.nav');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+                nav.style.flexDirection = 'column';
+                nav.style.position = 'absolute';
+                nav.style.top = '100%';
+                nav.style.left = '0';
+                nav.style.right = '0';
+                nav.style.background = 'white';
+                nav.style.padding = '1rem';
+                nav.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+                nav.style.zIndex = '50';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.backgroundColor = 'white';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Service card hover effects
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-12px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Button click animations
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+                
+                // Add click animation
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards for animation
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
