@@ -15,7 +15,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@lovable_dev">
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
-
+    
     <style>
         * {
             margin: 0;
@@ -575,24 +575,7 @@
         }
 
         /* Footer */
-        .footer {
-            background: #111827;
-            color: white;
-            padding: 4rem 0;
-        }
-
-        .footer-container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1rem;
-            text-align: center;
-        }
-
-        .footer p {
-            color: #9ca3af;
-            font-size: 1.125rem;
-        }
-
+        
         /* Icons (simplified) */
         .icon {
             width: 2rem;
@@ -630,35 +613,714 @@
                 display: none;
             }
         }
+        /* Header Navbar Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  z-index: 1000;
+  font-family: 'Sora', sans-serif;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 350px
+}
+
+.logo {
+  width: 140px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #0C1892;
+  font-weight: 600;
+}
+
+.eit-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0C1892;
+  letter-spacing: 2px;
+}
+
+
+.tagline {
+  font-size: 12px;
+  font-weight: 400;
+  color: #0C1892;
+  line-height: 1.1;
+}
+
+.tagline .transforming {
+  color: #0C1892;
+  font-weight: 600;
+}
+
+.tagline .businesses {
+  color: #D32F2F;
+  font-weight: 600;
+}
+
+.tagline .through-it {
+  color: #0C1892;
+  font-weight: 600;
+}
+
+/* Base Styles */
+.nav-links {
+  font-family: 'Arial', sans-serif;
+  background: #f8f9fa;
+  padding: 0 40px;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+}
+
+.main-nav > li {
+  position: relative;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 20px 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+    text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #0C1892;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+
+}
+
+.nav-link:hover, .nav-link.active {
+  background-color: #0C1892;
+ color: white;
+}
+
+/* Submenu Styling - Level 1 */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  z-index: 1000;
+  border-radius: 4px;
+  padding: 10px 0;
+}
+
+.submenu li a {
+  padding: 12px 20px;
+  color: #555;
+  display: block;
+  white-space: nowrap;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background: #f0f0f0;
+  color: #0066cc;
+  padding-left: 25px;
+}
+
+/* Submenu Styling - Level 2 */
+.submenu-level2 {
+  left: 100%;
+  top: 65%;
+  margin-left: 1px;
+}
+
+/* Dropdown Indicators */
+.has-submenu > a::after {
+  content: "";
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* Hover Effects */
+.has-submenu:hover > .submenu {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Special styling for AI submenu items */
+.submenu-level2 li {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+}
+
+.submenu-level2 li a {
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+  }
+  
+  .submenu, .submenu-level2 {
+    position: static;
+    display: none;
+    box-shadow: none;
+    width: 100%;
+  }
+  
+  .submenu-level2 {
+    padding-left: 20px;
+  }
+  
+  .has-submenu > a::after {
+    content: "▾";
+  }
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0C1892;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-info i {
+  font-size: 20px;
+  color: #0C1892;
+}
+
+.contact-text span {
+  display: block;
+  font-size: 12px;
+  color: #0C1892;
+  font-weight: 400;
+}
+
+.contact-text strong {
+  font-weight: 700;
+  color: #0C1892;
+}
+
+.cta-button {
+  background-color: #0C1892;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #093a8a;
+}
+
+/* Responsive Header */
+@media (max-width: 900px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .contact-text {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+
+  .header-right {
+    gap: 10px;
+  }
+
+  .cta-button {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+}
     </style>
+    <style>
+        footer{
+            a{
+                text-decoration: none;
+                color: #5c5b5b;
+            }
+
+        }
+            .footer-section{
+            width: 98vw;
+            max-width: 1400px;
+            }
+            .footer-section li a{
+                text-decoration: none;
+                color: #5c5b5b !important;
+                font-weight: 300;
+            }
+            .footer-section li a:hover{
+                text-decoration: none;
+                color: black !important;
+                font-weight: 300;
+            }
+            .footer-btn a{
+                text-decoration: none;
+                font-size: 1.025rem;
+                font-weight: 500;
+                color: white;
+            }
+            .footer-btn:hover{
+                background-color: #0e4bdb;
+            }
+            .footer-parent-container{
+                position: relative;
+                height: 7vh;
+                width: 100vh; 
+            }
+            .footer-purple-container{
+                z-index:2;
+                font-family: "Plus Jakarta Sans", sans-serif;
+                height: 44vh;
+                width: 65vw;
+                background-color: #14166C;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-left: 32%;
+                margin-top: 0vh;
+                gap: 2vw;
+            }
+            .footer-tagline-1{
+                margin-top: 2vh;
+                margin-bottom: 2.5vh;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #0B4CB8;
+            }
+            .footer-tagline-2{
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 550;
+                margin-top: -7vh;
+            }
+            .footer-subtitle{
+                margin-top: 3.5vh;
+                color: white;
+                font-size: 0.9rem;
+                font-weight: 200;
+            }
+            .footer-btn{
+                margin-top: -25vh;
+                font-family: "Plus Jakarta Sans", sans-serif;
+                border: none;
+                border-radius: 3rem;
+                width: 9vw;
+                height: 9vh;
+                background-color: #658DE9;
+            }
+            .footer-white-container{
+                box-shadow: 4px 6px 20px rgba(0,0,0,0.3);
+                z-index: 1;
+                font-family: "Plus Jakarta Sans", sans-serif !important;
+                width: 92.5vw;
+                font-size: 1rem;
+                margin-top: 7.5%;
+                margin-left: 3vw;
+                height: 65vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                border-radius: 2rem;
+                margin-bottom: 5vh;
+            }
+            .footer-row-1{
+                height: 90vh;
+                padding-bottom: 0.5vh;
+                margin-top: 25vh;
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                width: 100%;
+                justify-content: space-around;
+                border-bottom: 1px solid rgb(184, 182, 182);
+                margin-bottom: 5vh;
+                gap: 5vh;
+            }
+            .footer-side-2{
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                gap: 3.5vw;
+                margin-left: 0.05vw;
+            }
+            .footer-col-2-1{
+                color: #5c5b5b;
+                margin-left: 1vw;
+                margin-right:15vw;
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                color: #5c5b5b;
+            }
+            .footer-list-title{
+                color: #000552 !important;
+                font-weight: 600;
+            }
+            .footer-row-2{
+                color: #5c5b5b;
+                margin-top: -1vh;
+                margin-left: -4.5vw;
+                width: 92.5vw;
+                height: 10vh;
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                justify-content: space-around;
+                gap: 5vw;
+            }
+            .footer-side-1{
+                margin-left: 5%;
+            }
+            .footer-icon-image{
+                height: 32vh;
+                margin-top: 5.5vh;
+                margin-left: -7vw;
+                padding: 1rem;
+
+            }
+            .footer-col-2-4{
+                display: inline-block;
+            }
+            .footer-detail-1{
+                margin-top: -12.5%;
+                margin-left: 15%;
+            }
+            .footer-detail-2{
+                margin-top: -12.5%;
+                margin-left: 15%;
+            }
+            .footer-social-media-links{
+                display: flex;
+                gap: 1.5vw;
+            }
+            @media (max-width:1440px) and (min-width:1000px){
+                .footer-side-1 {
+                    margin-left: 1%;
+                }
+            }
+            @media (max-width: 1150px) and (min-width: 768px){
+                .footer-parent-container{
+                    position: relative;
+                    height: 10vh;
+                    width: 100vw;
+                }
+                .footer-white-container{
+                    font-size: 0.95rem;
+                    width: 94vw;
+                    height: 120vh;
+                }
+                .footer-purple-container{
+                    margin-left: 15vw;
+                    height: 55vh;
+                    width: 67.5vw;
+                    gap: 17.5vw;
+                }
+                .footer-icon-section{
+                    height: 40vh;
+                    width: 25vw;
+                    margin-top: 0vh;
+                    margin-left: 7.5vw;
+                }
+                .footer-icon-image{
+                    padding: 1rem;
+                    margin-left: -6.5vw;
+                    margin-top: 6.5vh;
+                    height: 32.5vh;
+                }
+                .footer-text-section{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    margin-left: -18.5vw;
+                    margin-top: 2.5vh;
+                    padding: 0.5rem;
+                }
+                .footer-btn{
+                    margin-top: -3.5vh;
+                    width: 12vw;
+                    height: 9vh;
+                }
+                .footer-row-1{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 37.5svh;
+                }
+                .footer-row-2{
+                    margin-top: 1vh;
+                    margin-left: 2vw;
+                }
+                .footer-tagline-1{
+                    font-size: 1.25rem;
+                    margin-top: 3.75vh;
+                }
+                .footer-tagline-2{
+                    font-size: 1.25rem;
+                    margin-top: -6vh;
+                }
+                .footer-btn a{
+                    font-size: 0.9rem;
+                }
+                .footer-subtitle{
+                    font-size: 0.8rem;
+                    margin-top: 0.75vh;
+                }
+                .footer-side-2{
+                    display: flex;
+                    flex-direction: row;
+                    flex: 1;
+                    justify-content: space-between;
+                    gap: 6.25rem;
+                    margin-left: -2vw;
+                    margin-top: 5vh;
+                }
+                .footer-side-1{
+                    display: flex;
+                    flex-direction: column ;
+                    justify-content: center;
+                    margin-top: -2.5vh;
+                    margin-left: -1.5vw;
+                    padding: 1rem;
+                }
+                .footer-col-2-1{
+                    text-align: center;
+                }
+                .footer-social-media-links{
+                    display: flex;
+                    gap: 1.5vw;
+                    justify-content: center;
+                    margin-left: -4vw;
+                }
+
+            }
+            @media (max-width:768px) and (min-width:320px){
+                .footer-parent-container{
+                    position: relative;
+                    height: 15vh;
+                    width: 100vw;
+                }
+                .footer-white-container{
+                    font-size: 0.85rem;
+                    width: 94vw;
+                    height: 130vh;
+                }
+                .footer-purple-container{
+                    margin-left: 22.5vw;
+                    height: 57.5vh;
+                    width: 70vw;
+                    gap: 17.5vw;
+                }
+                .footer-icon-section{
+                    height: 25vh;
+                    margin-top: 0vh;
+                    margin-left: 7.5vw;
+                }
+                .footer-icon-image{
+                    padding: 1rem;
+                    margin-left: -8.5vw;
+                    margin-top: 6.5vh;
+                    height: 25vh;
+                }
+                .footer-text-section{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    margin-left: -20vw;
+                    margin-top: 2.5vh;
+                    padding: 0.35rem;
+                }
+                .footer-btn{
+                    margin-top: -3.5vh;
+                    width: 15vw;
+                    height: 6.5vh;
+                }
+                .footer-row-1{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 42.50vh;
+                }
+                .footer-row-2{
+                    margin-top: 3vh;
+                    margin-left: 5vw;
+                }
+                .footer-tagline-1{
+                    font-size: 1.05rem;
+                    margin-top: 3.5vh;
+                }
+                .footer-tagline-2{
+                    font-size: 1.05rem;
+                    margin-top: -6vh;
+                }
+                .footer-btn a{
+                    font-size: 0.70rem;
+                }
+                .footer-subtitle{
+                    font-size: 0.75rem;
+                    margin-top: 0.25vh;
+                }
+                .footer-side-2{
+                    display: flex;
+                    flex-direction: row;
+                    flex: 1;
+                    justify-content: space-between;
+                    gap: 1.5rem;
+                    margin-left: -2vw;
+                    margin-top: 12vh;
+                }
+                .footer-side-1{
+                    display: flex;
+                    flex-direction: column ;
+                    justify-content: center;
+                    margin-top: -2.5vh;
+                    margin-left: -1.5vw;
+                    padding: 0.75rem;
+                }
+                .footer-col-2-1{
+                    text-align: center;
+                }
+                .footer-social-media-links{
+                    display: flex;
+                    gap: 1.5vw;
+                    justify-content: center;
+                    margin-left: -4vw;
+                }
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="header.png" alt="EIT - Transforming Businesses Through IT">
-                </div>
-                
-                <nav class="nav">
-                    <a href="#">Home</a>
-                    <a href="#">Services</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Careers</a>
-                    <a href="#">White Label</a>
-                </nav>
-                
-                <button class="mobile-menu">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
+   <header class="header">
+    <div class="header-left">
+      <img src="./header.png" alt="Company Logo" class="logo" />
+      <div class="logo-text">
+        <!-- <span class="eit-text">EIT</span> -->
+        <!-- <div class="tagline">
+          <span class="transforming">Transforming</span><br />
+          <span class="businesses">Businesses</span><br />
+          <span class="through-it">Through IT</span>
+        </div> -->
+      </div>
+    </div>
+    <nav class="nav-links">
+  <ul class="main-nav">
+    <li><a href="#" class="nav-link active">Home</a></li>
+    
+    <li class="has-submenu">
+      <a href="#" class="nav-link">Services</a>
+      <ul class="submenu">
+        <li><a href="#">IT SERVICES</a></li>
+        <li><a href="#">IOT SERVICES</a></li>
+        <li class="has-submenu">
+          <a href="#">AI</a>
+          <ul class="submenu submenu-level2">
+            <li><a href="#"><span>AI Powered No Code Low Code</span></a></li>
+            <li><a href="#"><span>AI Powered Business Analytics</span></a></li>
+            <li><a href="#"><span>AI Powered Office Automation</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="has-submenu">
+      <a href="#" class="nav-link">Who We Are</a>
+      <ul class="submenu">
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">CLIENTS</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="#" class="nav-link">Contact Us</a></li>
+    <li><a href="#" class="nav-link">Blogs</a></li>
+  </ul>
+</nav>
+    <div class="header-right">
+      <div class="contact-info">
+        <i class="fas fa-envelope"></i>
+        <div class="contact-text">
+          <span>Get in touch with us</span>
+          <strong>sales@ethicalintelligent.com</strong>
         </div>
-    </header>
-
+      </div>
+      <button class="cta-button">Let's Talk</button>
+    </div>
+  </header>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
@@ -898,8 +1560,75 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <p>© 2024 Ethical Intelligent Technologies. Building AI solutions that matter.</p>
+        <div class="footer-parent-container">
+            <div class="footer-purple-container">
+                <div class="footer-icon-section">
+                    <img class="footer-icon-image" src="./colorful-logo.png" alt="colorful icon" />
+                </div>
+                <div class="footer-text-section">
+                    <p class="footer-tagline-1">Let’s Work Together !</p>
+                    <br />
+                    <p class="footer-tagline-2">Have a project in mind? Let’s build<br />something great together.</p>
+                    <br />
+                    <button type="button" class="footer-btn"><span><a href="./contact-us.html"><h5>Contact Us</h5></a></span></button>
+                    <br />
+                    <p class="footer-subtitle">Start a conversation with our experts and discover how<br />our AI-powered solutions can transform your business.</p>
+                </div>
+            </div>
+            </div>
+            <div class="footer-white-container">
+                    <div class="footer-row-1">
+                        <div class="footer-side-1">
+                            <div class="footer-col-2-1">
+                                <img src="./Eit Logo.png" alt="logo of company" />
+                                <br />
+                                <p>Empowering businesses through Ethical and Intelligent IT,<br />IOT, and AI-driven digital solutions.</p>
+                                <br />
+                                <div class="footer-social-media-links">
+                                    <span><a href="https://www.facebook.com/ethicalintelligent"><img src="./Frame 1.png" alt="Facebook logo" /></a></span>
+                                    <span><a href="https://www.instagram.com/ethicalintelligent_/"><img src="./Frame 2.png" alt="Instagram logo" /></a></span>
+                                    <span><a href="https://www.linkedin.com/company/ethicalintelligent/?viewAsMember=true"><img src="./Frame 3-new.png" alt="Linkedin logo" /></a></span>
+                                    <span><a href="https://x.com/EITechnologies_"><img src="./Frame 4.png" alt="Twitter logo" /></a></span>
+                                    <span><a href="https://in.pinterest.com/ethicalintelligenttechnologies/_created/"><img src="./Frame 5.png" alt="Pinterest logo" /></a></span>
+                                    <span><a href="https://www.youtube.com/@eitworks"><img src="./Frame 6.png" alt="YouTube logo" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-side-2">
+                            <div class="footer-col-2-2">
+                                <ul>
+                                    <li><p class="footer-list-title">Company</p></li>
+                                    <li><span><a href="./about-us.html"><p>About Us</p></a></span></li>
+                                    <li><span><a href="./clients.html"><p>Clients</p></a></span></li>
+                                    <li><span><a href="./career"><p>Careers</p></a></span></li>
+                                    <li><span><a href="https://ethicalintelligent.com/blogs"><p>Blogs</p></a></span></li>
+                                <ul>
+                            </div>
+                            <div class="footer-col-2-3">
+                                <ul>
+                                    <li><p class="footer-list-title">Solutions</p></li>
+                                    <li><span><a href="./it-services.html"><p>IT Services</p></a></span></li>
+                                    <li><span><a href="./iot-services.html"><p>IOT</p></a></span></li>
+                                    <li><span><a href="./AI-office-automation" ><p>AI Office Automation</p></a></span></li>
+                                    <li><span><a href="./AI-Business-analytics" ><p>AI Business Analytics</p></a></span></li>
+                                    <li><span><a href="./AI no-code/low-code" ><p>AI no-code/low-code</p></a></span></li>
+                                <ul>
+                            </div>
+                            <div class="footer-col-2-4">
+                                <ul>
+                                    <li><p style="margin-bottom:10px;" class="footer-list-title">Contact</p></li>
+                                    <li><img src="./clock.png" alt="icon of a clock" /><p style="position: relative; top:-5px" class="footer-detail-1">Monday to Friday<br />9 AM - 8 PM IST</p></li>
+                                    <br />
+                                    <li><img src="./symbol.png" alt="icon of symbol" /><a href="mailto:sales@ethicalintelligent.com"><p style="position: relative; top:-5px;" class="footer-detail-2">sales@ethicalintelligent.com</p></li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-row-2">
+                        <p class="footer-copyright">@2025AllRightsReserved<p>
+                        <p class="footer-policy-tag">Privacy Policy</p>
+                    </div>
+            </div>
         </div>
     </footer>
 
